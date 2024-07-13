@@ -17,14 +17,15 @@ TELEGRAM_TOKEN = config('TELEGRAM_TOKEN')
 TELEGRAM_CHAT_ID = config('TELEGRAM_CHAT_ID')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['unique-agency.tj']
+ALLOWED_HOSTS = ['unique-agency.tj', '127.0.0.1', '192.168.0.106']
 
 
 # Application definition
 
 INSTALLED_APPS = [
+    'modeltranslation',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -106,9 +107,14 @@ TIME_ZONE = 'Asia/Dushanbe'
 
 
 LANGUAGES = [
-    ('en', _('English')),
     ('ru', _('Russian')),
-    # Добавьте другие языки по необходимости
+    ('en', _('English')),
+    ('tg', _('Tajik')),
+]
+
+
+LOCALE_PATHS = [
+    BASE_DIR / 'locale',
 ]
 
 TIME_ZONE = 'UTC'
@@ -124,6 +130,11 @@ USE_L10N = True  # Включает локализацию форматов да
 # https://docs.djangoproject.com/en/4.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'unique_app/static'),
+]
+
 STATIC_ROOT = '/var/www/unique/unique_app/static/'
 MEDIA_URL = '/media/'
 MEDIA_ROOT = '/var/www/unique/unique_website/media/'

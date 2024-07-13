@@ -4,79 +4,109 @@
 
 {% load static %}
 
-
+  
 {% block content %}
 
-<!-- Main Hero -->
+{% load i18n %}
 
-<div class="container-fluid p-0">
+<div id="content">
+  <div class="container-fluid p-0">
     <div class="main-hero">
       <!-- Текст и кнопки -->
       <div class="content-hero">
-      <p>Unique - диджитал агентство</p>
-      <h1>Ваш успех - наше</h1> 
-      <h1><span class="kurale-regular">уникальное</span> решение!</h1>
-      <a href="{% url 'inquiry' %}" class="button_hero">Заказать проект или услугу</a>
-      </div> 
+        <p class="animate__animated animate__fadeIn animate__delay-1s">{% trans "Unique - диджитал агентство" %}</p>
+        <h1 class="animate__animated animate__fadeIn animate__delay-2s">{% trans "Ваш успех - наше" %}</h1>
+        <h1 class="animate__animated animate__fadeIn animate__delay-3s"><span class="kurale-regular">{% trans "уникальное" %} </span>{% trans "решение!" %}</h1>
+        <a href="{% url 'inquiry' %}" class="btn glow-on-hover w-50 animate__animated animate__zoomIn animate__delay-4s">
+          <span class="btn--svg__label">{% trans "Заказать проект или услугу" %}</span>
+        </a>
+      </div>
       <!-- Генерируем квадратики с помощью JavaScript -->
     </div>
   </div>
+</div>
 
 
-  <!-- About US -->
-  <section class="team-section">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 image-block">
-          <img src="{% static 'images/team.svg' %}" alt="team">
+<!-- About US -->
+<section class="team-section">
+  <div class="container">
+    <div class="row">
+        <div class="col-md-6 about-left">
+            <div class="emoji-container">
+                <div class="emoji-item wow animate__animated animate__fadeInLeft" data-name="Тахмина" data-position="Копирайтер">
+                    <img style="margin-right: 50px;" src="{% static 'images/emoji/Takhmina.svg' %}" alt="Emoji 1">
+                </div>
+                <div class="emoji-item wow animate__animated animate__fadeInLeft animate__delay-1s" data-name="Шахзод" data-position="Разработчик">
+                  <img style="margin-top: 80px;" src="{% static 'images/emoji/Shahzod.svg' %}" alt="Emoji 2">
+                </div>
+                <div class="emoji-item wow animate__animated animate__fadeInLeft animate__delay-2s" data-name="Надира" data-position="СММ Специалист">
+                  <img src="{% static 'images/emoji/Nodira.svg' %}" alt="Emoji 3">
+                </div>
+                <div class="emoji-item wow animate__animated animate__fadeInLeft animate__delay-3s" data-name="Амина" data-position="Графический Дизайнер">
+                  <img src="{% static 'images/emoji/Amira.svg' %}" alt="Emoji 4">
+                </div>
+                <div class="emoji-item wow animate__animated animate__fadeInLeft animate__delay-4s" data-name="Наим" data-position="Ведущий дизайнер">
+                  <img src="{% static 'images/emoji/Naim.svg' %}" alt="Emoji 5">
+                </div>
+                <div class="emoji-item wow animate__animated animate__fadeInLeft animate__delay-5s" data-name="Бежан" data-position="Маркетолог">
+                  <img src="{% static 'images/emoji/Bezhan.svg' %}" alt="Emoji 6">
+                </div>
+                <!-- Добавьте больше эмодзи по необходимости -->
+            </div>
         </div>
-        <div class="col-md-6 image-block-mobile text-center">
-          <p>
-            <img src="{% static 'images/team-mobile.svg' %}" alt="team">
-          </p>
+        <div class="col-md-6 about-right">
+          <div>
+            <div class="subtitle wow animate__animated animate__fadeInRight">{% trans "немного о нас" %}</div>
+            <h2 class="wow animate__animated animate__fadeInRight animate__delay-1s">
+              {% trans "Молодая и Талантливая" %}<br>{% trans "Команда, Влюблённая в" %}
+              <div class="decorative-line"></div>
+              {% trans "Своё Дело." %}
+            </h2>
+            <p class="p-5 wow animate__animated animate__fadeInRight animate__delay-2s"> 
+              {% trans "Мы специализируемся на графическом и UI/UX дизайне, SMM-продвижении, таргетированной рекламе, профессиональной фотосъемке, создании сайтов и веб-решений, а также в автоматизации и разработке ботов." %}<br><br>
+
+              {% trans "Наша философия основана на постоянном развитии и стремлении к совершенству." %}<br><br>
+              
+              {% trans "Unique - диджитал агентство, Ваше комплексное" %}<br>  
+              {% trans "решение 🙌" %}
+            </p>
+          </div>
         </div>
-        <div class="col-md-6 content-block">
-          <div class="subtitle">немного о нас</div>
-          <div class="title">МОЛОДАЯ И ТАЛАНТЛИВАЯ КОМАНДА, ВЛЮБЛЕННАЯ В СВОЁ ДЕЛО.</div>
-          <div class="decorative-line"></div>
-          <div class="text-block">Мы специализируемся на графическом и UI/UX<br> дизайне, SMM-продвижении, таргетированной<br> рекламе, профессиональной фотосъемке, создании<br> сайтов и веб-решений, а также в автоматизации и<br> разработке ботов.</div>
-          <div class="text-block">Наша философия основана на постоянном<br> развитии и стремлении к совершенству.</div>
-          <div class="text-block"><span>Unique</span> - диджитал агентство, Ваше комплексное<br> решение <span>🙌</span></div>
-        </div>
-      </div>
-    </div>    
+    </div>
+  </div>
 </section>
 
-<!-- Number Stats -->
 
-<div class="stats-section">
+
+<!-- Number Stats -->
+<!-- Stats Section -->
+<div class="stats-section wow animate__animated animate__fadeInUp" data-wow-offset="100">
   <div class="container">
     <div class="row">
       <div class="col stat-item">
-        <div class="stat-number">30+</div>
-        <span class="stat-description">выполненных<br> проектов</span>
+        <div class="stat-number" id="count1">30+</div>
+        <span class="stat-description">{% trans "выполненных<br>проектов" %}</span>
       </div>
       <div class="col stat-item">
-        <div class="stat-number">50+</div>
-        <span class="stat-description">довольных<br>клиентов</span>
+        <div class="stat-number" id="count2">50+</div>
+        <span class="stat-description">{% trans "довольных<br>клиентов" %}</span>
       </div>
       <div class="col stat-item">
-        <div class="stat-number">2+</div>
-        <span class="stat-description">года на<br> рынке</span>
+        <div class="stat-number" id="count3">2+</div>
+        <span class="stat-description">{% trans "года на<br> рынке" %}</span>
       </div>
     </div>
   </div>
-  </div>
+</div>
 
-<!-- Title Block -->
   
 <div class="services-section">
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="services-header">наши услуги</div>
+        <div class="services-header"> {% trans "наши услуги" %}</div>
         <div class="services-decorative-line"></div>
-        <div class="services-subheader">Что мы предлагаем?</div>
+        <div class="services-subheader"> {% trans "Что мы предлагаем?" %}</div>
       </div>
     </div>
   </div>
@@ -84,92 +114,90 @@
 
 
   <div class="container py-5">
-    <div class="row">
-      <!-- Карточка услуги -->
+    <div class="row g-5">
+      <!-- Карточка уи -->
       <div class="col-md-4 mb-4">
         <div class="service-card">
           <div class="service-icon"><img src="{% static 'images/icons/design.svg' %}" alt="design"></div>
-          <div style="font-size: 26px;" class="service-title">Дизайн</div>
+          <div class="service-title">{% trans "Дизайн" %}</div>
           <div class="service-description">
-          Разработка лого/брендинга<br>
-          Разработка полиграфии<br>
-          Разработка атрибутики<br>
-          UI / UX Дизайн<br>
-          Графический дизайн<br>
-          Индивидуальные задачи<br>
+            {% trans "Разработка лого/брендинга" %}<br>
+            {% trans "Разработка полиграфии" %}<br>
+            {% trans "Разработка атрибутики" %}<br>
+            {% trans "UI / UX Дизайн" %}<br>
+            {% trans "Графический дизайн" %}<br>
+            {% trans "Индивидуальные задачи" %}<br>
           </div>
-          <a href="{% url 'inquiry' %}" class="btn btn-link service-link">Заказать <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
+          <a href="{% url 'inquiry' %}" class="nav-link">{% trans "Заказать" %} <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
         </div>
       </div>
   
       <div class="col-md-4 mb-4">
-        <div class="service-card">
+        <div class="service-card mb-card">
           <div class="service-icon"><img src="{% static 'images/icons/web.svg' %}" alt="web"></div>
-          <div style="font-size: 26px;" class="service-title">разработка сайтов</div>
-          <div class="service-description">
+          <div class="service-title">{% trans "разработка<br>сайтов" %}</div>
+          <div class="service-description-desck">
           Landing Page<br>
-          Корпоративный сайт<br>
-          Сайт-каталог<br>
-          Интернет-магазин<br>
-          Индивидуальный проект<br>
+          {% trans "Корпоративный сайт<br>" %}
+          {% trans "Сайт-каталог<br>" %}
+          {% trans "Интернет-магазин<br>" %}
+          {% trans "Индивидуальный проект<br>" %}
           </div>
-          <a href="{% url 'inquiry' %}" class="btn btn-link service-link">Заказать <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
+          <a href="{% url 'inquiry' %}" class="nav-link">{% trans "Заказать" %} <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
         </div>
       </div>
   
       <div class="col-md-4 mb-4">
         <div class="service-card">
           <div class="service-icon"><img src="{% static 'images/icons/smm.svg' %}" alt="smm"></div>
-          <div style="font-size: 26px;" class="service-title">SMM Продвижение</div>
-          <div class="service-description">
-          Ведение Facebook/Instagram<br>
-          Создание маркетинговой стратегии<br>
-          Разработка рубрикатора/контент-плана<br>
-          Создание постов и креативов<br>
-          Администрация аккаунта<br>
+          <div class="service-title">{% trans "SMM<br>Продвижение" %}</div>
+          <div class="service-description-desck">
+          {% trans "Ведение Facebook/Instagram" %}<br>
+          {% trans "Создание маркетинговой стратегии" %}<br>
+          {% trans "Разработка рубрикатора/контент-плана" %}<br>
+          {% trans "Создание постов и креативов" %}<br>
+          {% trans "Администрация аккаунта<br>" %}
           </div>
-          <a href="{% url 'inquiry' %}" class="btn btn-link service-link">Заказать <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
+          <a href="{% url 'inquiry' %}" class="nav-link">{% trans "Заказать" %} <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
         </div>
       </div>
   
       <div class="col-md-4 mb-4">
         <div class="service-card">
           <div class="service-icon"><img src="{% static 'images/icons/ads.svg' %}" alt="ads"></div>
-          <div style="font-size: 26px;" class="service-title">
-  Таргетированная реклама</div>
+          <div class="service-title">
+            {% trans "Таргетированная реклама" %}</div>
           <div class="service-description"><br>
-          Поисковая реклама Google<br>
-  Контекстно-медийная реклама<br>
-  Реклама в YouTube<br>
-  Таргетированная реклама<br>
-  в Facebook/Instagram<br>
-  Разработка рекламных<br>
-  креативов
+            {% trans "Поисковая реклама Google" %}<br>
+            {% trans "Контекстно-медийная реклама" %}<br>
+            {% trans "Реклама в YouTube" %}<br>
+            {% trans "Таргетированная реклама" %}<br>
+            {% trans "SMM Продвижение" %} {% trans "в Facebook/Instagram" %}<br>
+            {% trans "Разработка рекламных<br>креативов" %}
           </div>
-          <a href="{% url 'inquiry' %}" class="btn btn-link service-link">Заказать <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
+          <a href="{% url 'inquiry' %}" class="nav-link">{% trans "Заказать" %} <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
         </div>
       </div>
   
       <div class="col-md-4 mb-4">
-        <div class="service-card">
+        <div class="service-card mb-card">
           <div class="service-icon"><img src="{% static 'images/icons/seo.svg' %}" alt="seo"></div>
-          <div style="font-size: 26px;" class="service-title">SEO Оптимизация</div>
-          <div class="service-description">
-          Предварительная работа: аудит и анализ<br>
-  Определение семантического ядра<br>
-  Техническая оптимизация<br>
-  Контентная оптимизация<br>
-  Внешняя оптимизация<br>
+          <div class="service-title">{% trans "SEO<br> Оптимизация" %}</div>
+          <div class="service-description-desck">
+            {% trans "Предварительная работа: аудит и анализ" %}<br>
+            {% trans "Определение семантического ядра" %}<br>
+            {% trans "Техническая оптимизация" %}<br>
+            {% trans "Контентная оптимизация" %}<br>
+            {% trans "Внешняя оптимизация" %}<br>
           </div>
-          <a href="{% url 'inquiry' %}" class="btn btn-link service-link">Заказать <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
+          <a href="{% url 'inquiry' %}" class="nav-link">{% trans "Заказать" %} <img class="service-arrow" src="{% static 'images/icons/arrow.svg' %}" alt="arrow"></a>
         </div>
       </div>
   
       <div class="col-md-4 mb-4">
         <div class="service-card">
           <div class="service-icon"><img src="{% static 'images/icons/rec.svg' %}" alt="rec"></div>
-          <div class="service-title-soon">Фото и
-  видеосъемка</div>
+          <div class="service-title-soon">{% trans "Фото и видеосъемка" %}</div>
           <a class="btn btn-link service-link-soon">Coming soon...</a>
         </div>
       </div>
@@ -179,46 +207,107 @@
 
   <section class="cooperation text-lg-start">
     <div class="container py-4">
-      <div class="cooperation-hero">
-        <h2>Есть предложение?</h2>
-        <p class="display-4"><a class="display-4 text-decoration-none" href="mailto:salom@unique-agency.tj">salom@unique-agency.tj</a></p>
-      </div>
+        <div class="cooperation-hero">
+            <h2>{% trans "Есть предложение?" %}<br></h2>
+            <div class="email-container">
+                    <a data-hover="salom@unique-agency.tj" class="email-link text-decoration-none" href="mailto:salom@unique-agency.tj">salom@unique-agency.tj</a>
+            </div>
+        </div>
     </div>
-  </section>  
+</section>
+
+
 
 <!-- Title Block -->
 <div class="services-section">
   <div class="container">
     <div class="row">
       <div class="col">
-        <div class="services-header">ПОРТФОЛИО</div>
+        <div class="services-header">{% trans "ПОРТФОЛИО" %}</div>
         <div class="services-decorative-line"></div>
-        <div class="services-subheader">Наши недавние проекты</div>
+        <div class="services-subheader">{% trans "Наши недавние проекты" %}</div>
       </div>
     </div>
   </div>
   </div>
 </div>
 
-  <section class="portfolio">
-    <div class="container">
-        <div class="row">
-            {% for item in portfolio_items %}
-                <div class="col-lg-4 col-md-6 mb-4">
-                    <div class="portfolio-item">
-                      <a href="{% url 'portfolio-detail' pk=item.pk %}" class="portfolio-link">
-                        <img src="{{ item.image.url }}" class="img-fluid" alt="{{ item.title }}">
-                        <div class="portfolio-overlay">
-                            <h3>{{ item.title }}</h3>
-                        </div>
-                      </a>
-                    </div>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
-</section>
 
+
+ <!-- Портфолио -->
+ <section class="portfolio container mt-5">
+  <div class="row">
+      <!-- Первый ряд -->
+      <div class="col-md-6">
+          <div class="portfolio-item" style="height: 421px; background-image: url('{% static "images/portfolio/Rectangle 30.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Сайт под ключ для Multikid" %}</div>
+                  <div class="text-category-big">{% trans "WEB<br>РАЗРАБОТКА" %}</div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="portfolio-item" style="height: 421px; background-image: url('{% static "images/portfolio/Rectangle 24.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Нури Мақсад" %}<br></div>
+                  <div class="text-category-small">{% trans "Дизайн" %}</div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="portfolio-item" style="height: 421px;  background-image: url('{% static "images/portfolio/Rectangle 23.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Сайт HC Media" %}<br></div>
+                  <div class="text-category-small">WEB</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row mt-4">
+      <!-- Второй ряд -->
+      <div class="col-md-3">
+          <div class="portfolio-item" style="height: 421px;  background-image: url('{% static "images/portfolio/Rectangle 27.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Макет Profi" %}</div>
+                  <div class="text-category-small">UI/UX</div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-3">
+          <div class="portfolio-item" style="height: 421px; background-image: url('{% static "images/portfolio/Rectangle 26.png" %}');">
+              <div class="overlay">
+                  <div class="text">Warshan Store</div>
+                  <div class="text-category-small">{% trans "Дизайн" %}</div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="portfolio-item" style="height: 421px; background-image: url('{% static "images/portfolio/Rectangle 25.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Макет мобильного приложения Sado" %}</div>
+                  <div class="text-category-big">UI/UX<br>{% trans "Дизайн" %}</div>
+              </div>
+          </div>
+      </div>
+  </div>
+  <div class="row mt-4">
+      <!-- Третий ряд -->
+      <div class="col-md-6">
+          <div class="portfolio-item" style="height: 421px; background-image: url('{% static "images/portfolio/Rectangle 28.png" %}');">
+              <div class="overlay">
+                  <div class="text">{% trans "Американский классический стиль" %}</div>
+                  <div class="text-category-big">{% trans "Дизайн" %}</div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-center all-works-portfolio">
+          <a href="https://unique-agency.tj/portfolio/" class="btn btn-portfolio btn-lg"><i class="bi bi-plus-circle p-2"></i> {% trans "Все работы" %}</a>
+      </div>
+  </div>
+  <div class="background-circle">
+    <img src="{% static 'images/vector/Circle.svg' %}" alt="circle">
+  </div> 
+</section>
 
 
     <!-- Title Block -->
@@ -226,8 +315,8 @@
         <div class="row align-items-center">
           <!-- Левая колонка для текста и декораций -->
           <div class="col-md-6">
-            <p class="lead">Отзывы</p>
-            <h2>Что говорят<br> о нас?</h2>
+            <p class="lead">{% trans "Отзывы" %}</p>
+            <h2>{% trans "Что говорят<br> о нас?" %}</h2>
             <div class="decorative-image">
               <img src="{% static 'images/vector/element_with_heart.svg' %}" alt="heart">
             </div>
@@ -239,16 +328,16 @@
             <div class="carousel-item active">
                <div class="blockquote">
                 <p class="mb-0">
-                Агентство, которое разработало для нас айдентику, профессионалы своего дела. Они создали для нас уникальный бренд, который помог нам выделиться на рынке. 
-                Мы ценим их профессионализм и рекомендуем агентство всем, кто ищет надежного партнера для своих проектов.
+                  {% trans "Агентство, которое разработало для нас айдентику, профессионалы своего дела. Они создали для нас уникальный бренд, который помог нам выделиться на рынке." %}
+                  {% trans "Мы ценим их профессионализм и рекомендуем агентство всем, кто ищет надежного партнера для своих проектов." %}
                 </p>
                 <div class="decoration-line"></div>
                 <footer class="blockquote-footer-carousel d-flex align-items-center justify-content-between">
     <div class="d-flex align-items-center">
       <img src="{% static 'images/partner/Varshan.png' %}" alt="Варшан Каххоров" class="testimonial-author-image me-3">
       <div>
-        <div><strong>Варшан Каххоров</strong></div>
-        <div class="who_reviev">руководитель Washan store</div>
+        <div><strong>{% trans "Варшан Каххоров" %}</strong></div>
+        <div class="who_reviev">{% trans "Руководитель Washan store" %}</div>
       </div>
     </div>
     <div class="control-button d-flex">
@@ -268,14 +357,14 @@
             <div class="carousel-item">
               <div class="blockquote">
                 <p class="mb-0">
-                  Я был приятно удивлен профессионализмом и инновационным подходом агентства Unique в разработке нашего сайта. Их команда проявила высокий уровень компетенции, оперативно реагировала на наши требования и предложения, Мы довольны результатом и благодарны агентству за качественно выполненную работу.
+                  {% trans " Я был приятно удивлен профессионализмом и инновационным подходом агентства Unique в разработке нашего сайта. Их команда проявила высокий уровень компетенции, оперативно реагировала на наши требования и предложения, Мы довольны результатом и благодарны агентству за качественно выполненную работу." %}
                 </p>
                 <div class="decoration-line"></div>
                 <footer class="blockquote-footer-carousel d-flex align-items-center justify-content-between">
     <div class="d-flex align-items-center">
       <img src="{% static 'images/partner/Haytham.jpg' %}" alt="Хэйтем Александр" class="testimonial-author-image me-3">
       <div>
-        <div><strong>Хэйтем Александр</strong></div>
+        <div><strong>{% trans "Хэйтем Александр" %}</strong></div>
         <div class="who_reviev">CEO HC Media</div>
       </div>
     </div>
@@ -301,43 +390,73 @@
 
 
   <section class="partner">
-    <div class="container">
-      <div class="col">
-        <div class="services-header">ОСОБАЯ БЛАГОДАРНОСТЬ</div>
-        <div class="services-decorative-line"></div>
-        <div class="services-subheader text-white">ВСЕМ НАШИМ партнерам</div>
+    <div class="partner-wrapper">
+    <div class="container-partner">
+      <div class="logo-grid">
+          <div class="partner-row">
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/Multikid logo.svg' %}" alt="Multikid">
+              </div>
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/logo aseel.svg' %}" alt="Aseel">
+              </div>
+          </div>
+          <div class="partner-row">
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/Logo MaxPrint.svg' %}" alt="MaxPrint">
+              </div>
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/Logo Warshan.svg' %}" alt="Warshan Store">
+              </div>
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/Sado logo.svg' %}" alt="Sado">
+              </div>
+              <div class="logo-item">
+                  <img src="{% static 'images/partner/Logo Hc.svg' %}" alt="hc">
+              </div>
+          </div>
       </div>
-      <div class="row mt-5">
-        <!-- Логотипы партнеров -->
-        <div class="col-md-8">
-          <div class="row">
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/Multikid logo.svg' %}" alt="Multikid">
-            </div>
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/logo aseel.svg' %}" alt="Assel">
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/Logo MaxPrint.svg' %}" alt="MaxPrint">
-            </div>
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/Logo Warshan.svg' %}" alt="Warshan">
-            </div>
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/Sado logo.svg' %}" alt="Sado">
-            </div>
-            <div class="col-md-3 text-center">
-              <img src="{% static 'images/partner/Logo Hc.svg' %}" alt="HC Logo">
-            </div>
-          </div>
+      <div class="header-partner">
+          <h1>{% trans "ОСОБАЯ БЛАГОДАРНОСТЬ" %}</h1>
+          <p>{% trans "ВСЕМ НАШИМ<br> НАШИМ ПАРТНЕРАМ" %}</p>
+      </div>
+  </div>
+  </div>
+  
+  </section>
+<!-- Мобильная версия -->
+<section class="partner-mobile d-md-none">
+  <div class="partner-wrapper">
+    <div class="container-partner">
+      <div class="header-partner-mobile text-center mb-4">
+        <h1>{% trans "ОСОБАЯ БЛАГОДАРНОСТЬ" %}</h1>
+        <p>{% trans "ВСЕМ НАШИМ<br> НАШИМ ПАРТНЕРАМ" %}</p>
+      </div>
+      <div class="logo-grid-mobile mt-3">
+        <!-- Логотипы в мобильной версии -->
+        <div class="logo-item">
+          <img src="{% static 'images/partner/Multikid logo.svg' %}" alt="Multikid">
         </div>
-        <!-- Блок благодарности -->
+        <div class="logo-item">
+          <img src="{% static 'images/partner/logo aseel.svg' %}" alt="Aseel">
+        </div>
+        <div class="logo-item">
+          <img src="{% static 'images/partner/Logo MaxPrint.svg' %}" alt="MaxPrint">
+        </div>
+        <div class="logo-item">
+          <img src="{% static 'images/partner/Logo Warshan.svg' %}" alt="Warshan Store">
+        </div>
+        <div class="logo-item">
+          <img src="{% static 'images/partner/Sado logo.svg' %}" alt="Sado">
+        </div>
+        <div class="logo-item">
+          <img src="{% static 'images/partner/Logo Hc.svg' %}" alt="hc">
+        </div>
       </div>
     </div>
-    
-  </section>
+  </div>
+</section>
+
 
 
   <!-- FAQ -->
@@ -348,8 +467,7 @@
           <!-- Текст слева -->
           <div class="mb-4">
             <h2 class="faq-header">FAQ</h2>
-            <p class="faq-body">Часто задаваемые<br>
-              вопросы:</p>
+            <p class="faq-body">{% trans "Часто задаваемые<br>вопросы:" %}</p>
               <div class="faq_symbol">
                 <img src="{% static 'images/icons/FAQ_symbol.svg' %}" alt="faq_symbol">
               </div>
@@ -361,49 +479,49 @@
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingOne">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  Каковы сроки выполнения проектов?
+                  {% trans "Каковы сроки выполнения проектов?" %}
                   <span class="accordion-icon"></span> <!-- Псевдо-элемент для иконки -->
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Сроки выполнения проектов зависят от их сложности и объема. Мы стремимся к тому, чтобы каждый проект был завершен в срок и соответствовал вашим ожиданиям. Поэтому мы устанавливаем реалистичные сроки нашей работы и придерживаемся их, чтобы обеспечить качественный результат.
+                  {% trans "Сроки выполнения проектов зависят от их сложности и объема. Мы стремимся к тому, чтобы каждый проект был завершен в срок и соответствовал вашим ожиданиям. Поэтому мы устанавливаем реалистичные сроки нашей работы и придерживаемся их, чтобы обеспечить качественный результат." %}
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  Как можно определить бюджет на разработку сайта?
+                  {% trans "Как можно определить бюджет на разработку сайта?" %} 
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Используйте наш удобный <a style="text-decoration: underline;" onclick="startCalculation()">калькулятор</a> для быстрого и точного расчета стоимости разработки вашего веб-сайта.
+                  {% trans "Используйте наш удобный" %} <a style="text-decoration: underline;" onclick="startCalculation()">  {% trans "калькулятор" %}</a>   {% trans "для быстрого и точного расчета стоимости разработки вашего веб-сайта." %}
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingThree">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                  Какие этапы разработки сайта?
+                  {% trans "Какие этапы разработки сайта?" %} 
                 </button>
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Основные этапы включают планирование, дизайн, разработку, тестирование и запуск.
+                  {% trans "Основные этапы включают планирование, дизайн, разработку, тестирование и запуск." %}  
                 </div>
               </div>
             </div>
             <div class="accordion-item">
               <h2 class="accordion-header" id="headingFour">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
-                  Какие преимущества предоставляет контекстная реклама?
+                  {% trans "Какие преимущества предоставляет контекстная реклама?" %} 
                 </button>
               </h2>
               <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  Контекстная реклама позволяет точно таргетировать рекламные сообщения на вашу целевую аудиторию.
+                  {% trans "Контекстная реклама позволяет точно таргетировать рекламные сообщения на вашу целевую аудиторию." %}  
                 </div>
               </div>
             </div>
@@ -415,10 +533,12 @@
 
   <section class="contact-section text-white py-5">
     <div class="container">
-      <h2>Остались вопросы?</h2>
-      <a href="/" class="btn btn-download mt-3"><i class="bi bi-paperclip bg-white"></i> Скачать бриф</a>
-      <h1 class="display-4 mt-4"><a class="display-4 text-decoration-none" href="{% url 'inquiry' %}">Напишите нам <img src="{% static 'images/icons/arrow_contact.svg' %}" alt=""></a></h1>
-      <div class="contact-divider mx-auto mt-3"></div>
+      <h2>{% trans "Остались вопросы?" %}</h2>
+      <a href="/" class="btn btn-download mt-3"><i class="bi bi-paperclip bg-white"></i> {% trans "Скачать бриф" %}</a>
+      <div class="mt-3">
+        <a data-hover="Напишите нам" class="email-link text-decoration-none" href="{% url 'inquiry' %}">{% trans "Напишите нам" %}</a>
+      </div>
+      <div class="contact-divider mx-auto mt-5"></div>
     </div>
-  </section>  
+  </section>
 {% endblock %}

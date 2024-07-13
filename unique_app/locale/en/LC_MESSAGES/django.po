@@ -1,0 +1,511 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-07-12 11:37+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:52
+#: .\unique_website\unique_app\templates\unique_app\base.html:128
+msgid "ГЛАВНАЯ"
+msgstr "HOME"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:55
+#: .\unique_website\unique_app\templates\unique_app\base.html:131
+msgid "УСЛУГИ"
+msgstr "SERVICES"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:58
+#: .\unique_website\unique_app\templates\unique_app\base.html:134
+#: .\unique_website\unique_app\templates\unique_app\home.html:255
+msgid "ПОРТФОЛИО"
+msgstr "PORTFOLIO"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:61
+#: .\unique_website\unique_app\templates\unique_app\base.html:137
+msgid "БЛОГ"
+msgstr "BLOG"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:70
+#: .\unique_website\unique_app\templates\unique_app\base.html:141
+msgid "Оставить заявку"
+msgstr "Request a Quote"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:207
+msgid "Главная"
+msgstr "Home"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:208
+msgid "Услуги"
+msgstr "Services"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:209
+msgid "Портфолио"
+msgstr "Portfolio"
+
+#: .\unique_website\unique_app\templates\unique_app\base.html:210
+msgid "Блог"
+msgstr "Blog"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:3
+msgid "Unique - digital agency"
+msgstr "Unique - Digital Agency"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:4
+msgid "Your success is ours"
+msgstr "Your Success Is Ours"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:5
+msgid "unique solution!"
+msgstr "Unique Solution!"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:6
+msgid "Order a project or service"
+msgstr "Order a Project or Service"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:10
+msgid "a little about us"
+msgstr "A Little About Us"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:11
+msgid "A YOUNG AND TALENTED TEAM, IN LOVE WITH THEIR BUSINESS."
+msgstr "A Young and Talented Team, in Love with Their Business."
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:13
+msgid ""
+"We specialize in graphic and UI/UX design, SMM promotion, targeted "
+"advertising, professional photography, creation of websites and web "
+"solutions, as well as automation and bot development."
+msgstr ""
+"We specialize in graphic and UI/UX design, SMM promotion, targeted "
+"advertising, professional photography, website and web solution creation, as "
+"well as automation and bot development."
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:14
+msgid ""
+"Our philosophy is based on continuous development and the pursuit of "
+"excellence."
+msgstr ""
+"Our philosophy is based on continuous development and the pursuit of "
+"excellence."
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:15
+msgid "Unique"
+msgstr "Unique"
+
+#: .\unique_website\unique_app\templates\unique_app\content.html:15
+msgid "digital agency, your comprehensive solution"
+msgstr "Digital Agency, Your Comprehensive Solution"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:18
+msgid "Unique - диджитал агентство"
+msgstr "Unique - Digital Agency"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:19
+msgid "Ваш успех - наше"
+msgstr "Your Success Is Ours"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:20
+msgid "уникальное"
+msgstr "Unique"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:20
+msgid "решение!"
+msgstr "Solution!"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:22
+msgid "Заказать проект или услугу"
+msgstr "Order a Project or Service"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:60
+msgid "немного о нас"
+msgstr "A Little About Us"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:61
+msgid "Молодая и Талантливая"
+msgstr "Young and Talented"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:61
+msgid "Команда, Влюблённая в"
+msgstr "Team, in Love with"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:63
+msgid "Своё Дело."
+msgstr "Their Work."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:64
+msgid ""
+"Мы специализируемся на графическом и UI/UX дизайне, SMM-продвижении, "
+"таргетированной рекламе, профессиональной фотосъемке, создании сайтов и веб-"
+"решений, а также в автоматизации и разработке ботов."
+msgstr ""
+"We specialize in graphic and UI/UX design, SMM promotion, targeted "
+"advertising, professional photography, website and web solution creation, as "
+"well as automation and bot development."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:66
+msgid ""
+"Наша философия основана на постоянном развитии и стремлении к совершенству."
+msgstr ""
+"Our philosophy is based on continuous development and the pursuit of "
+"excellence."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:68
+msgid "Unique - диджитал агентство, Ваше комплексное"
+msgstr "Unique - Digital Agency, Your Comprehensive"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:68
+msgid "решение 🙌"
+msgstr "Solution 🙌"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:83
+msgid "выполненных<br>проектов"
+msgstr "Completed<br>Projects"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:87
+msgid "довольных<br>клиентов"
+msgstr "Satisfied<br>Clients"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:91
+msgid "года на<br> рынке"
+msgstr "Years in<br>Business"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:136
+msgid "наши услуги"
+msgstr "Our Services"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:138
+msgid "Что мы предлагаем?"
+msgstr "What We Offer?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:151
+#: .\unique_website\unique_app\templates\unique_app\home.html:282
+#: .\unique_website\unique_app\templates\unique_app\home.html:309
+#: .\unique_website\unique_app\templates\unique_app\home.html:317
+#: .\unique_website\unique_app\templates\unique_app\home.html:328
+msgid "Дизайн"
+msgstr "Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:153
+msgid "Разработка лого/брендинга"
+msgstr "Logo/Branding Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:154
+msgid "Разработка полиграфии"
+msgstr "Print Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:155
+msgid "Разработка атрибутики"
+msgstr "Branding Materials"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:156
+msgid "UI / UX Дизайн"
+msgstr "UI / UX Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:157
+msgid "Графический дизайн"
+msgstr "Graphic Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:158
+msgid "Индивидуальные задачи"
+msgstr "Custom Tasks"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:160
+#: .\unique_website\unique_app\templates\unique_app\home.html:175
+#: .\unique_website\unique_app\templates\unique_app\home.html:190
+#: .\unique_website\unique_app\templates\unique_app\home.html:207
+#: .\unique_website\unique_app\templates\unique_app\home.html:222
+msgid "Заказать"
+msgstr "Order"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:167
+msgid "разработка<br>сайтов"
+msgstr "Website<br>Development"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:170
+msgid "Корпоративный сайт<br>"
+msgstr "Corporate Website<br>"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:171
+msgid "Сайт-каталог<br>"
+msgstr "Catalog Website<br>"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:172
+msgid "Интернет-магазин<br>"
+msgstr "E-commerce Website<br>"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:173
+msgid "Индивидуальный проект<br>"
+msgstr "Custom Project<br>"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:182
+#: .\unique_website\unique_app\templates\unique_app\home.html:184
+#: .\unique_website\unique_app\templates\unique_app\home.html:204
+msgid "SMM<br>Продвижение"
+msgstr "SMM<br>Promotion"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:184
+msgid "Ведение Facebook/Instagram"
+msgstr "Facebook/Instagram Management"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:185
+msgid "Создание маркетинговой стратегии"
+msgstr "Marketing Strategy Creation"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:186
+msgid "Разработка рубрикатора/контент-плана"
+msgstr "Development of Categorization/Content Plan"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:187
+msgid "Создание постов и креативов"
+msgstr "Post and Creative Creation"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:188
+msgid "Администрация аккаунта<br>"
+msgstr "Account Administration<br>"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:198
+#: .\unique_website\unique_app\templates\unique_app\home.html:203
+msgid "Таргетированная реклама"
+msgstr "Targeted Advertising"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:200
+msgid "Поисковая реклама Google"
+msgstr "Google Search Ads"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:201
+msgid "Контекстно-медийная реклама"
+msgstr "Contextual and Display Ads"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:202
+msgid "Реклама в YouTube"
+msgstr "YouTube Ads"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:204
+msgid "в Facebook/Instagram"
+msgstr "on Facebook/Instagram"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:205
+#, fuzzy
+#| msgid "Разработка полиграфии"
+msgid "Разработка рекламных<br>креативов"
+msgstr "Print Design"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:214
+msgid "SEO<br> Оптимизация"
+msgstr "SEO<br>Optimization"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:216
+msgid "Предварительная работа: аудит и анализ"
+msgstr "Preliminary Work: Audit and Analysis"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:217
+msgid "Определение семантического ядра"
+msgstr "Semantic Core Definition"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:218
+#, fuzzy
+#| msgid "Техническая оптимизация"
+msgid "Техническая оптимизация"
+msgstr "Technical Optimization"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:219
+#, fuzzy
+#| msgid "Контентная оптимизация"
+msgid "Контентная оптимизация"
+msgstr "Content Optimization"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:220
+#, fuzzy
+#| msgid "Внешняя оптимизация"
+msgid "Внешняя оптимизация"
+msgstr "External Optimization"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:229
+msgid "Фото и видеосъемка"
+msgstr "Photography and Videography"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:240
+msgid "Есть предложение?"
+msgstr "Have a Proposal?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:257
+msgid "Наши недавние проекты"
+msgstr "Our Recent Projects"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:273
+msgid "Сайт под ключ для Multikid"
+msgstr "Turnkey Website for Multikid"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:274
+msgid "WEB<br>РАЗРАБОТКА"
+msgstr "WEB<br>DEVELOPMENT"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:281
+msgid "Нури Мақсад"
+msgstr "Nuri Makhsad"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:289
+msgid "Сайт HC Media"
+msgstr "HC Media Website"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:300
+msgid "Макет Profi"
+msgstr "Profi Layout"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:316
+msgid "Макет мобильного приложения Sado"
+msgstr "Sado Mobile App Layout"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:327
+msgid "Американский классический стиль"
+msgstr "American Classic Style"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:333
+msgid "Все работы"
+msgstr "All Works"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:347
+msgid "Отзывы"
+msgstr "Reviews"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:348
+msgid "Что говорят<br> о нас?"
+msgstr "What People<br> Say About Us?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:360
+msgid ""
+"Agency that developed our branding are professionals in their field. "
+"They created a unique brand for us that helped us stand out in the market."
+msgstr ""
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:361
+msgid ""
+"We value their professionalism and recommend the agency to anyone looking for a "
+"reliable partner for their projects."
+msgstr ""
+
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:368
+msgid "Варшан Каххоров"
+msgstr "Varshan Kakhkhorov"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:369
+msgid "Руководитель Washan store"
+msgstr "Director of Washan Store"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:389
+msgid ""
+" Я был приятно удивлен профессионализмом и инновационным подходом агентства "
+"Unique в разработке нашего сайта. Их команда проявила высокий уровень "
+"компетенции, оперативно реагировала на наши требования и предложения, Мы "
+"довольны результатом и благодарны агентству за качественно выполненную "
+"работу."
+msgstr ""
+"I was pleasantly surprised by the professionalism and innovative approach of "
+"the Unique agency in developing our website. Their team demonstrated a high "
+"level of competence, responded promptly to our requirements and suggestions. "
+"We are satisfied with the result and grateful to the agency for the quality "
+"work."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:396
+msgid "Хэйтем Александр"
+msgstr "Haytem Alexander"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:449
+msgid "ОСОБАЯ БЛАГОДАРНОСТЬ"
+msgstr "SPECIAL THANKS"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:450
+msgid "ВСЕМ НАШИМ<br> НАШИМ ПАРТНЕРАМ"
+msgstr "TO ALL OUR<br> PARTNERS"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:467
+msgid "Часто задаваемые<br>вопросы:"
+msgstr "Frequently Asked<br>Questions:"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:479
+msgid "Каковы сроки выполнения проектов?"
+msgstr "What Are the Project Deadlines?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:485
+msgid ""
+"Сроки выполнения проектов зависят от их сложности и объема. Мы стремимся к "
+"тому, чтобы каждый проект был завершен в срок и соответствовал вашим "
+"ожиданиям. Поэтому мы устанавливаем реалистичные сроки нашей работы и "
+"придерживаемся их, чтобы обеспечить качественный результат."
+msgstr ""
+"Project deadlines depend on their complexity and scope. We strive to ensure "
+"that each project is completed on time and meets your expectations. "
+"Therefore, we set realistic deadlines and adhere to them to ensure high-"
+"quality results."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:492
+msgid "Как можно определить бюджет на разработку сайта?"
+msgstr "How to Determine the Budget for Website Development?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:497
+msgid "Используйте наш удобный"
+msgstr "Use our convenient"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:497
+msgid "калькулятор"
+msgstr "calculator"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:497
+msgid "для быстрого и точного расчета стоимости разработки вашего веб-сайта."
+msgstr ""
+"for a quick and accurate calculation of the cost of developing your website."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:504
+msgid "Какие этапы разработки сайта?"
+msgstr "What Are the Stages of Website Development?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:509
+msgid ""
+"Основные этапы включают планирование, дизайн, разработку, тестирование и "
+"запуск."
+msgstr ""
+"The main stages include planning, design, development, testing, and launch."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:516
+msgid "Какие преимущества предоставляет контекстная реклама?"
+msgstr "What Are the Benefits of Contextual Advertising?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:521
+msgid ""
+"Контекстная реклама позволяет точно таргетировать рекламные сообщения на "
+"вашу целевую аудиторию."
+msgstr ""
+"Contextual advertising allows you to precisely target advertising messages "
+"to your target audience."
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:533
+msgid "Остались вопросы?"
+msgstr "Still Have Questions?"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:534
+msgid "Скачать бриф"
+msgstr "Download Brief"
+
+#: .\unique_website\unique_app\templates\unique_app\home.html:535
+msgid "Напишите нам"
+msgstr "Contact Us"
+
+#: .\unique_website\unique_app\views.py:16
+#: .\unique_website\unique_app\views.py:33
+msgid "Welcome to my site."
+msgstr ""

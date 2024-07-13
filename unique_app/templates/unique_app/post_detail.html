@@ -1,5 +1,7 @@
 {% extends 'unique_app/base.html' %}
 
+<title>{% block title %}Unique - {{ post.title }} {% endblock %}</title>
+
 {% block content %}
 <section class="post_detail">
   <div class="container mt-5">

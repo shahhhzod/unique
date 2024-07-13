@@ -14,8 +14,8 @@ window.addEventListener('load', function() {
   for (let i = 0; i < squaresPerRow * numRows; i++) {
     let square = document.createElement('div');
     square.classList.add('square');
-    square.style.left = `${(i % squaresPerRow) * 110}px`; // Расстояние между квадратами 120px
-    square.style.top = `${Math.floor(i / squaresPerRow) * 110}px`; // Расстояние между рядами 120px
+    square.style.left = `${(i % squaresPerRow) * 113}px`; // Расстояние между квадратами 120px
+    square.style.top = `${Math.floor(i / squaresPerRow) * 113}px`; // Расстояние между рядами 120px
     heroSection.appendChild(square);
   }
 
@@ -135,3 +135,5 @@ const menu = document.querySelector('.menu');
 menuBtn.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
+
+
